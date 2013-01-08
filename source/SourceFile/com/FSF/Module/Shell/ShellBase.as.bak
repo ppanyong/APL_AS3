@@ -1,0 +1,193 @@
+package com.FSF.Module.Shell
+{
+	import flash.display.DisplayObjectContainer;
+	import flash.display.MovieClip;
+	import flash.display.DisplayObject;
+	import flash.events.Event;
+	import flash.events.IOErrorEvent;
+	import flash.events.ProgressEvent;
+	import flash.events.SecurityErrorEvent;
+	import flash.net.*;
+	import com.FSF.Module.*;
+	import com.FSF.Module.ModuleBase;
+	import com.FSC.UI.InterActiveObject.DisplayObjectContainer.LoadingUI.*;
+	import com.FSC.UI.InterActiveObject.DisplayObjectContainer.SWFLoader.*;
+	import com.FSC.UI.InterActiveObject.DisplayObjectContainer.LoadLine.*;
+	import com.FSF.Lib.*;
+	import com.FSC.UI.InterActiveObject.NavTweenButtonBar.*;
+	
+	/**
+	 * 主程序 原型
+	 * 
+	 * @authorpan
+	 * @date080428
+	 * @version1.0.080428
+	 */
+	public class ShellBase extends ModuleBase 
+	{
+		protected var m_libList:Array;//需要加载的公共类
+		protected var m_moduleList:Array;//业务模块类
+		private var m_loader:SWFLoader;//已经增加了超时属性
+		private var m_loading:ILoadingUI;//显示的类元件实例 需要在舞台上定义 该类应该可以摆在lib中但是怕下载延时大。
+		private var m_isLoading:Boolean=false;//是否在加载的标志
+		private var m_shellConfigXmlPath="config/config.xml";//配置文件相对路径
+		/**装配需要的类
+		 */
+		private function getLoadUI(){
+			return new LoadingUI(this);
+		}
+		/**
+		 * 构造函数
+		 */
+		public function ShellBase() {
+			this.init();
+		}
+		/**
+		 * 初始化
+		 */
+		private function init():void {
+			this.m_libList= new Array();
+			this.m_moduleList= new Array();
+			loadConfig(m_shellConfigXmlPath)
+		}
+		/**
+		 * 加载config
+		 * @path config文档路径
+		 */
+		private function loadConfig(path){
+			var xmlLoader:URLLoader=new URLLoader();
+			xmlLoader.addEventListener(Event.COMPLETE,configXmlLoaded);
+			xmlLoader.addEventListener(IOErrorEvent.IO_ERROR,configXmlIoErrorHandler);
+			xmlLoader.load(new URLRequest(path));
+		}
+		/**
+		 * 加载config出错处理
+		 */
+		private function configXmlIoErrorHandler(event:IOErrorEvent):void {
+			trace("warning:"+m_shellConfigXmlPath+"配置文件读取失败！: " + event);
+		}
+		/**
+		 * 当配置文件读取完成，分配个配置参数到参数变量
+		 */
+		private function configXmlLoaded(event:Event):void {
+			var xml:XML=XML(event.target.data);
+			//填充2个数组 作为加载文件的文件列表
+			for (var i:int=0; i < xml.lib.item.length(); i++) {
+				this.m_libList.push(xml.lib.item[i]);
+			}
+			/*for (var j:int=0; j < xml.module.item.length(); j++) {
+				this.m_moduleList.push(xml.module.item[j]);
+			}*/
+			this.m_loader=new SWFLoader();
+			this.m_loading= getLoadUI();
+			this.loadSwf();
+		}
+		/**
+		 * 按照列表 加载swf文件
+		 */
+		protected function loadSwf():void {
+			//如果加载的模块文件为空则直接返回
+			/*if (this.m_moduleList.length == 0) {
+				trace("加载的模块文件列表为空，主程序结束");
+				return;
+			}*/
+			var url:String;
+			var target:String;
+			//先加载类库文件
+			if (this.m_libList.length > 0) {
+				url=String(this.m_libList[0]);
+				//类库加载在同域
+				target=SWFLoader.TARGET_SAME;
+			} else {
+				/*url=this.m_moduleList[0];
+				target=SWFLoader.TARGET_CHILD;*/
+			}
+			if (! this.m_isLoading) {
+				//显示加载
+				var tmp:DisplayObject = m_loading as DisplayObject;
+				this.addChild(tmp);
+				this.initLoadEvent();
+				this.m_isLoading=true;
+			}
+			this.m_loader.load(url,target);
+			this.m_loading.setTarget(url);
+		}
+		/**
+		 * 初始化下载器
+		 */
+		private function initLoadEvent():void {
+			this.m_loader.addEventListener(LoadEvent.COMPLETE,this.onComplete);
+			this.m_loader.addEventListener(ProgressEvent.PROGRESS,this.onProgress);
+			this.m_loader.addEventListener(IOErrorEvent.IO_ERROR,this.onError);
+			this.m_loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR,this.onError);
+		}
+		/**
+		 * 显示模块的逻辑
+		 */
+		protected function showModule(p_module:IModule):void {
+			//下面是网页内部业务逻辑
+			//override
+		}
+		/**
+		 * 撤销
+		 */
+		private function removeLoadEvent():void {
+			this.m_loader.removeEventListener(LoadEvent.COMPLETE,this.onComplete);
+			this.m_loader.removeEventListener(ProgressEvent.PROGRESS,this.onProgress);
+			this.m_loader.removeEventListener(IOErrorEvent.IO_ERROR,this.onError);
+			this.m_loader.removeEventListener(SecurityErrorEvent.SECURITY_ERROR,this.onError);
+		}
+		
+		/*private function addNavEventListener(p_module:IModule){
+			p_module.addEventListener(navEvent.ONNAVCLICK,this.nav);
+			p_module.show(this)
+		}
+		protected function nav(e:navEvent){
+			// override trace(e.navInfo)
+		}*/
+		/**
+		 * 初始化导航，具体的定义根据导航类的bulidMenu
+		 * 也可以将这个导航作为单独的Module加载后再处理
+		 */
+		private function bulidMainNav(){
+			var mainNav:NavTweenButtonBar = this.addUi(m_loader.getClass(Libaray.NavTweenButtonBar_NAME),"data/nav.xml") as NavTweenButtonBar;
+			mainNav.x=10;
+			mainNav.y=10;
+			mainNav.addEventListener(NavTweenButtonBarEvent.NavClick,onNavClickHandler);
+		}
+		/**
+		 * 导航点击处理函数
+		 */
+		private function onNavClickHandler(e:NavTweenButtonBarEvent){
+			trace(e.menuTreeXML);
+		}
+		
+		/**
+		 * 加载模块完成
+		 */
+		private function onComplete(p_e:LoadEvent):void {
+			this.m_libList.shift();
+			bulidMainNav();
+			if (this.m_libList.length > 0) {
+				this.loadSwf();
+			} else {
+				this.removeLoadEvent();
+				if (this.m_isLoading) {
+					var tmp:DisplayObject = m_loading as DisplayObject;
+					this.removeChild(tmp);
+					this.m_isLoading=false;
+				}
+				//下面是网页内部业务逻辑
+				//this.showModule(p_e.loaderInfo.content  as  IModule);
+				//this.m_moduleList.shift();
+			}
+		}
+		private function onProgress(p_e:ProgressEvent):void {
+			this.m_loading.update(p_e.bytesLoaded,p_e.bytesTotal);
+		}
+		private function onError(p_e:Event):void {
+			var s:String=this.m_libList.length > 0?this.m_libList[0]:this.m_moduleList[0];
+			trace("加载" + s + "失败");
+		}
+	}
+}

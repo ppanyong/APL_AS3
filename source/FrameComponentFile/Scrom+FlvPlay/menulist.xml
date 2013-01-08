@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by TEAM ViRiLiTY (VRL) -->
+<myfile>
+	<menu1 label="课程开始" link="C00s01p01" myover="C00s01p01">
+		<node myswf="C00s01p01" num="1" cframe="1" tframe="1"/>
+	</menu1>
+	<menu2 label="一、礼仪培训的目的" link="C01s00p01" myover="C01s02p01_2">
+		<node myswf="C01s00p01" num="2" cframe="1" tframe="5"/>
+		<node myswf="C01s01p01_1" num="2" cframe="2" tframe="5"/>
+		<node myswf="C01s01p01_2" num="2" cframe="3" tframe="5"/>
+		<node myswf="C01s02p01_1" num="2" cframe="4" tframe="5"/>
+		<node myswf="C01s02p01_2" num="2" cframe="5" tframe="5"/>
+	</menu2>
+	<menu3 label="二、基本礼仪" link="C02s00p01" myover="C02s05p01_2">
+		<node myswf="C02s00p01" num="3" cframe="1" tframe="21"/>
+		<node myswf="C02s01p01_1" num="3" cframe="2" tframe="21"/>
+		<node myswf="C02s01p01_2" num="3" cframe="3" tframe="21"/>
+		<node myswf="C02s01p01_3" num="3" cframe="4" tframe="21"/>
+		<node myswf="C02s01p01_4" num="3" cframe="5" tframe="21"/>
+		<node myswf="C02s02p01_1" num="3" cframe="6" tframe="21"/>
+		<node myswf="C02s02p01_2" num="3" cframe="7" tframe="21"/>
+		<node myswf="C02s02p02" num="3" cframe="8" tframe="21"/>
+		<node myswf="C02s02p03" num="3" cframe="9" tframe="21"/>
+		<node myswf="C02s03p01_1" num="3" cframe="10" tframe="21"/>
+		<node myswf="C02s03p01_2" num="3" cframe="11" tframe="21"/>
+		<node myswf="C02s03p02" num="3" cframe="12" tframe="21"/>
+		<node myswf="C02s03p03" num="3" cframe="13" tframe="21"/>
+		<node myswf="C02s03p04" num="3" cframe="14" tframe="21"/>
+		<node myswf="C02s03p05" num="3" cframe="15" tframe="21"/>
+		<node myswf="C02s03p06_1" num="3" cframe="16" tframe="21"/>
+		<node myswf="C02s03p06_2" num="3" cframe="17" tframe="21"/>
+		<node myswf="C02s04p01_2" num="3" cframe="18" tframe="21"/>
+		<node myswf="C02s04p01_3" num="3" cframe="19" tframe="21"/>
+		<node myswf="C02s05p01_1" num="3" cframe="20" tframe="21"/>
+		<node myswf="C02s05p01_2" num="3" cframe="21" tframe="21"/>
+	</menu3>
+	<menu4 label="三、接待员组人员的礼仪" link="C03s00p01" myover="C03s04p02">
+		<node myswf="C03s00p01" num="4" cframe="1" tframe="16"/>
+		<node myswf="C03s01p01" num="4" cframe="2" tframe="16"/>
+		<node myswf="C03s01p02" num="4" cframe="3" tframe="16"/>
+		<node myswf="C03s01p03" num="4" cframe="4" tframe="16"/>
+		<node myswf="C03s01p04" num="4" cframe="5" tframe="16"/>
+		<node myswf="C03s02p01_1" num="4" cframe="6" tframe="16"/>
+		<node myswf="C03s02p01_2" num="4" cframe="7" tframe="16"/>
+		<node myswf="C03s02p01_3" num="4" cframe="8" tframe="16"/>
+		<node myswf="C03s02p02" num="4" cframe="9" tframe="16"/>
+		<node myswf="C03s02p03" num="4" cframe="10" tframe="16"/>
+		<node myswf="C03s02p04" num="4" cframe="11" tframe="16"/>
+		<node myswf="C03s02p05" num="4" cframe="12" tframe="16"/>
+		<node myswf="C03s03p01" num="4" cframe="13" tframe="16"/>
+		<node myswf="C03s03p02" num="4" cframe="14" tframe="16"/>
+		<node myswf="C03s04p01" num="4" cframe="15" tframe="16"/>
+		<node myswf="C03s04p02" num="4" cframe="16" tframe="16"/>
+	</menu4>
+	<menu5 label="四、会场注册组人员的礼仪" link="C04s00p01" myover="C04s02p05">
+		<node myswf="C04s00p01" num="5" cframe="1" tframe="13"/>
+		<node myswf="C04s01p01_1" num="5" cframe="2" tframe="13"/>
+		<node myswf="C04s01p01_2" num="5" cframe="3" tframe="13"/>
+		<node myswf="C04s01p01_3" num="5" cframe="4" tframe="13"/>
+		<node myswf="C04s02p01" num="5" cframe="5" tframe="13"/>
+		<node myswf="C04s02p02_1" num="5" cframe="6" tframe="13"/>
+		<node myswf="C04s02p02_2" num="5" cframe="7" tframe="13"/>
+		<node myswf="C04s02p03_1" num="5" cframe="8" tframe="13"/>
+		<node myswf="C04s02p03_2" num="5" cframe="9" tframe="13"/>
+		<node myswf="C04s02p03_3" num="5" cframe="10" tframe="13"/>
+		<node myswf="C04s02p03_4" num="5" cframe="11" tframe="13"/>
+		<node myswf="C04s02p04" num="5" cframe="12" tframe="13"/>
+		<node myswf="C04s02p05" num="5" cframe="13" tframe="13"/>
+	</menu5>
+	<menu6 label="五、会场服务组人员的礼仪" link="C05s00p01" myover="C05s03p01_2">
+		<node myswf="C05s00p01" num="6" cframe="1" tframe="9"/>
+		<node myswf="C05s01p01" num="6" cframe="2" tframe="9"/>
+		<node myswf="C05s02p01_1" num="6" cframe="3" tframe="9"/>
+		<node myswf="C05s02p01_2" num="6" cframe="4" tframe="9"/>
+		<node myswf="C05s02p01_3" num="6" cframe="5" tframe="9"/>
+		<node myswf="C05s02p01_4" num="6" cframe="6" tframe="9"/>
+		<node myswf="C05s02p01_5" num="6" cframe="7" tframe="9"/>
+		<node myswf="C05s03p01_1" num="6" cframe="8" tframe="9"/>
+		<node myswf="C05s03p01_2" num="6" cframe="9" tframe="9"/>
+	</menu6>
+	<menu7 label="结束语" link="C06s01p01_1" myover="C06s01p01_5">
+		<node myswf="C06s01p01_1" num="7" cframe="1" tframe="5"/>
+		<node myswf="C06s01p01_2" num="7" cframe="2" tframe="5"/>
+		<node myswf="C06s01p01_3" num="7" cframe="3" tframe="5"/>
+		<node myswf="C06s01p01_4" num="7" cframe="4" tframe="5"/>
+		<node myswf="C06s01p01_5" num="7" cframe="5" tframe="5"/>
+	</menu7>
+	<coursename label="志愿者礼仪培训"/>
+</myfile>

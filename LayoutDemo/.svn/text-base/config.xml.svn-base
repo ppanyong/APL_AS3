@@ -1,0 +1,14 @@
+﻿<root>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="100" colspan="2"><mclass name="com.FSC.UI.LayoutManager.Custom.Swfloader" pars="url:top.swf;borderColor:0x666666" /></td>
+  </tr>
+  <tr>
+    <td width="190" height="200"><mclass name="com.FSC.UI.LayoutManager.Custom.Swfloader" pars="url:CalendarTest.swf;borderColor:0x666666" /></td>
+    <td rowspan="2" ></td>
+  </tr>
+  <tr>
+    <td><mclass name="com.FSC.UI.LayoutManager.Custom.List" pars="borderColor:0x666666" /></td>
+  </tr>
+</table>
+</root>

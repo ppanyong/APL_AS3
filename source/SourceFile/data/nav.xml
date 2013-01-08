@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<navItem tag="root">
+	
+	<navItem tag="home" showBg="false" transIn="false" isMain="true">
+		<display><![CDATA[首页|ShouYe]]></display>
+		<swf>homepage.swf</swf>
+		<data>home.xml</data>
+	</navItem>
+	
+	<navItem tag="video" isMain="true">
+		<display><![CDATA[视频集|Video]]></display>
+		<swf>homepage2.swf</swf>
+		<navItem tag="关于路透" printable="true" email="true" printWidth="650">
+			<display><![CDATA[关于路透]]></display>
+			<headline><![CDATA[值得信赖的全球资讯供应商]]></headline>
+			<emailName><![CDATA[关于路透]]></emailName>
+			<swf>scrolling_xml_template.swf</swf>
+			<data>about_aboutus.xml</data>
+		</navItem>
+		
+		<navItem tag="行业翘楚" printable="true" email="true" printWidth="650">
+			<display><![CDATA[行业翘楚]]></display>
+			<headline><![CDATA[信息资讯领域的业界领袖]]></headline>
+			<emailName><![CDATA[Reuters History of Breaking News page]]></emailName>
+			<swf>scrolling_xml_template.swf</swf>
+			<data>about_history.xml</data>
+		</navItem>
+		
+		<navItem tag="关于路透中文网" printable="true" email="true" printWidth="650">
+			<display><![CDATA[关于路透中文网]]></display>
+			<headline><![CDATA[中国精英读者第一时间的必读资讯]]></headline>
+			<emailName><![CDATA[Reuters History of Leadership News page]]></emailName>
+			<swf>scrolling_xml_template.swf</swf>
+			<data>about_leadership.xml</data>
+		</navItem>
+		
+	</navItem>
+	
+	<navItem tag="picture" printable="true" email="true" isMain="true" printWidth="650">
+		<display><![CDATA[图片集|Picture ]]></display>
+		<headline><![CDATA[路透中文网的受众是中国顶尖的商务决策层、采购层，以及富有影响力的精英读者群。]]></headline>	
+		<emailName><![CDATA[Reuters Audience page]]></emailName>
+		<swf>homepage.swf</swf>
+		<data>audience.xml</data>
+	</navItem>
+	
+</navItem>
