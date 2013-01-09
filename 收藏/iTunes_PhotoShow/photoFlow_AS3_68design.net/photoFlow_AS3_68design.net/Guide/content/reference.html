@@ -1,0 +1,740 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>Actionscript reference</title>
+
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="/css/help.css" rel="stylesheet" type="text/css">
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {font-size: 18px}
+.style2 {font-size: 14px}
+-->
+</style>
+</head>
+
+<body>
+
+<h1 class="title">Actionscript reference</h1>
+<p>&nbsp;</p>
+<p class="subtitle"><b>Events</b></p>
+<a href="#onAddPhoto">onAddPhoto</a><br />
+<a href="#onAutoFlip">onAutoFlip</a><br />
+<a href="#onDoubleClick">onDoubleClick</a><br />
+<a href="#onInitPhotoFlow">onInitPhotoFlow</a><br />
+<a href="#onLoadPhoto">onLoadPhoto</a><br />
+<a href="#onLoadPhotosComplete">onLoadPhotosComplete</a><br />
+<a href="#onLoadProgress">onLoadProgress</a><br />
+<a href="#onLoadSet">onLoadSet</a><br>
+<a href="#onMouseOver">onMouseOver</a><br>
+<a href="#onMouseOut">onMouseOut</a><br />
+<a href="#onRemovePhoto">onRemovePhoto</a><br />
+<a href="#onSelectPhoto">onSelectPhoto</a><br />
+<a href="#onStartLoadPhoto">onStartLoadPhoto</a><br />
+<p>&nbsp;</p>
+<p class="subtitle"><b>Methods</b></p>
+<p><a href="#addPhoto">addPhoto</a><br />
+    <a href="#flipBack">flipBack</a><br />
+    <a href="#flipNext">flipNext</a><br />
+    <a href="#getObjectAt">getObjectAt</a><br />
+    <a href="#getSelectedIndex">getSelectedIndex</a><br />
+    <a href="#getSelectedObject">getSelectedObject</a><br />
+    <a href="#getTotal">getTotal</a><br />
+    <a href="#loadXML">loadXML</a><br />
+    <a href="#removeAll">removeAll</a><br />
+    <a href="#removePhoto">removePhoto</a><br />
+    <a href="#setSelection">setSelection</a><br />
+    <a href="#setSize">setSize</a><br />
+    <a href="#sortByName">sortByName</a><br />
+    <a href="#startAutoFlip">startAutoFlip</a><br />
+    <a href="#stopAutoFlip">stopAutoFlip</a><br />
+</p>
+<p>&nbsp;</p>
+<p class="subtitle"><b>Properties</b></p>
+<a href="#allLoaded">allLoaded</a><a href="#autoFlip"><br>
+autoFlip</a><br />
+<a href="#defaultId">defaultId</a><br />
+<a href="#embedfont">embedFont</a><br />
+<a href="#flipSound">flipSound</a><br />
+<a href="#flipSpeed">flipSpeed</a><br />
+<a href="#folderPath">folderPath</a><br />
+<a href="#mouseWheelFlip">mouseWheelFlip</a><br />
+<a href="#nameBold">nameBold</a><br />
+<a href="#nameColor">nameColor</a><br />
+<a href="#nameDistance">nameDistance</a><br />
+<a href="#nameFont">nameFont</a><br />
+<a href="#namePosition">namePosition</a><br />
+<a href="#nameSize">nameSize</a><br />
+<a href="#photoHeight">photoHeight</a><br />
+<a href="#photosData">photosData</a><br />
+<a href="#photoWidth">photoWidth</a><br />
+<a href="#preloadSet">preloadSet</a><br />
+<a href="#reflectionAlpha">reflectionAlpha</a><br />
+<a href="#reflectionDepth">reflectionDepth</a><br />
+<a href="#reflectionDistance">reflectionDistance</a><br />
+<a href="#reflectionExtend">reflectionExtend</a><br />
+<a href="#scaleMode">scaleMode</a><br />
+<a href="#selectedScale">selectedScale</a><br />
+<a href="#selectedReflectionAlpha">selectedReflectionAlpha</a><br />
+<a href="#selectedY">selectedY</a><br />
+<a href="#showName">showName</a><br />
+<a href="#showReflection">showReflection</a><br />
+<a href="#spacing">spacing</a><br />
+<a href="#zoom">zoom</a><br />
+<a href="#zoomType">zoomType</a><br />
+<p>&nbsp;</p>
+<h1 class="subtitle">Events</h1>
+<p><a name="onAddPhoto" class="style1">onAddPhoto</a></p>
+
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when an image is added. </p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onAddPhoto = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onAddPhoto&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onAutoFlip" class="style1">onAutoFlip</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when an image is auto-flipped. </p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onAutoFlip = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onAutoFlip&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onDoubleClick" class="style1">onDoubleClick</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when an image is double-clicked.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onDoubleClick = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onDoubleClick&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onInitPhotoFlow" class="style1">onInitPhotoFlow</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when the component initializes.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onInitPhotoFlow = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onInitPhotoFlow&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onLoadPhoto" class="style1">onLoadPhoto</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; Called when an image is loaded.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onLoadPhoto = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onLoadPhoto&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onLoadPhotosComplete" class="style1">onLoadPhotosComplete</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when all photos have finished loading.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onLoadPhotosComplete = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onLoadPhotosComplete&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onLoadProgress" class="style1">onLoadProgress</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when the status of the load progress changes.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onLoadProgress = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onLoadProgress&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onLoadSet" class="style1">onLoadSet</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when the images set to preload have loaded.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onLoadSet = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onLoadSet&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<H1><a name="onMouseOver" class="style1" id="onMouseOver">onMouseOver</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when mouse rolled over an image.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onMouseOver = function(evt){
+		trace(evt.name);
+}
+myPhotoFlow.addEventListener(&quot;onMouseOver&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<H1><a name="onMouseOut" class="style1" id="onMouseOut">onMouseOut</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when mouse is rolled off an image.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onMouseOut = function(evt){
+		trace(evt.name);
+}
+myPhotoFlow.addEventListener(&quot;onMouseOut&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onRemovePhoto" class="style1">onRemovePhoto</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when an image is removed.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onRemovePhoto = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onRemovePhoto&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onSelectPhoto" class="style1">onSelectPhoto</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when an image is selected or becomes the current image.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onSelectPhoto = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onSelectPhoto&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="onStartLoadPhoto" class="style1">onStartLoadPhoto</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Event; called when an image starts loading.</p>
+<H4>Example</H4>
+<PRE class="style2">var eventListener:Object = new Object();
+eventListener.onStartLoadPhoto = function(eventObject:Object){
+	// extra code goes here
+}
+myPhotoFlow.addEventListener(&quot;onStartLoadPhoto&quot;, eventListener);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h1 class="subtitle">Methods</h1>
+<p><a name="addPhoto" class="style1">addPhoto</a></p>
+
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; adds a photo to the component. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.addPhoto({name:&quot;image&quot;, desc:&quot;an image&quot;, url:&quot;image.jpg&quot;}, 1);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="flipBack" class="style1">flipBack</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; moves back one photo in the series. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.flipBack();</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="flipNext" class="style1">flipNext</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; move forward one photo in the series. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.flipNext();</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="getobjectAt" class="style1">getObjectAt</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; returns the object at the specified index. </p>
+<H4>Example</H4>
+<PRE class="style2">var firstImage:String = myPhotoFlow.getObjectAt(0).url;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="getSelectedIndex" class="style1">getSelectedIndex</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; returns the index number of the currently selected photo. </p>
+<H4>Example</H4>
+<PRE class="style2">var currentImage:Number = myPhotoFlow.getSelectedIndex();</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="getSelectedObject" class="style1">getSelectedObject</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; returns the object associated with the currently selected photo. </p>
+<H4>Example</H4>
+<PRE class="style2">var currentImage:String = myPhotoFlow.getSelectedObject().url;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="getTotal" class="style1">getTotal</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; returns the total number of images. </p>
+<H4>Example</H4>
+<PRE class="style2">var totalNumberOfPhotos:Number = myPhotoFlow.getTotal();</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="loadXML" class="style1">loadXML</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; loads the specified XML file. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.loadXML(&quot;source.xml&quot;);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="removeAll" class="style1">removeAll</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; removes all photos from the component. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.removeAll();</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="removePhoto" class="style1">removePhoto</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; removes the specified photo from the series. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.removePhoto(0);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="setSelection" class="style1">setSelection</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; selects the specified photo. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.setSelection(1);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="setSize" class="style1">setSize</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; sets the width and height of the component. </p>
+<H4>Example</H4>
+<PRE class="style2">var newWidth:Number = 200;
+var newHeight:Number = 300;
+myPhotoFlow.setSize(newWidth, newHeight);</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="sortByName" class="style1">sortByName</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; sorts the series alphabetically based on photo names. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.sortByName();</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="startAutoFlip" class="style1">startAutoFlip</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; begins auto-flipping the photos. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.startAutoFlip();</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="stopAutoFlip" class="style1">stopAutoFlip</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Method; stops the auto-flipping of photos.</p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.stopAutoFlip();</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h1 class="subtitle">Properties</h1>
+<H1><a name="allLoaded" class="style1" id="allLoaded">allLoaded</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; boolean value indicatin whether all of the images have loaded or not </p>
+<H4>Example</H4>
+<PRE class="style2">trace(myPhotoFlow.allLoaded);</PRE>
+<p>&nbsp;</p>
+
+<H1><a name="autoFlip" class="style1">autoFlip</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; specifies whether to flip the photos automatically. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.autoFlip = true;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="defaultId" class="style1">defaultId</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the index of the default photo. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.defaultId = 2;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="embedFont" class="style1">embedFont</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; specifies whether to use an embedded font (true) or not (false).</p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.embedFont = true;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="flipSound" class="style1">flipSound</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the linkage identifier of a sound file in the library to be played when a photo flips. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.flipSound = &quot;mySound&quot;;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="flipSpeed" class="style1">flipSpeed</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the speed photos should be flipped at (the lower the value, the higher the speed). </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.flipSpeed = 3;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="folderPath" class="style1">folderPath</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the path to the folder containing external images. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.folderPath = &quot;images/&quot;;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="mouseWheelFlip" class="style1">mouseWheelFlip</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; specifies whether to flip photos using the mouse wheel action. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.mouseWheelFlip = true;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="nameBold" class="style1">nameBold</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; Determines whether to format the name as bold (true) or not (false).</p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.nameBold = false;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="nameColor" class="style1">nameColor</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; The color of the photos' name.</p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.nameColor = 0xFF00FF;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="nameDistance" class="style1">nameDistance</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the name's distance from the photo. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.nameDistance = 0;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="nameFont" class="style1">nameFont</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the font to be used for the name. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.nameFont = &quot;Arial&quot;;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="namePosition" class="style1">namePosition</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the position of the name in relation to the photo. Options are &quot;top left&quot;, &quot;top right&quot;, &quot;top center&quot;, &quot;bottom left&quot;, &quot;bottom right&quot; and &quot;bottom center&quot;. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.namePosition = &quot;top left&quot;;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="nameSize" class="style1">nameSize</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the font size of the name; </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.nameSize = 24;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="photoHeight" class="style1">photoHeight</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the height of the photos. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.photoHeight = 400;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="photosData" class="style1">photosData</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; an array  containing each photo's object data. </p>
+<H4>Example</H4>
+<PRE class="style2">for(var i:Number = 0; i&lt;myPhotoFlow.getTotal(); i++){<br>	trace(myPhotoFlow.photosData[i].url);<br>}</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="photoWidth" class="style1">photoWidth</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the width of the photos. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.photoWidth = 400;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="preloadSet" class="style1">preloadSet</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; specifies how many images to preload. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.preloadSet = 4;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="reflectionAlpha" class="style1">reflectionAlpha</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the alpha value of the reflection. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.reflectionAlpha = 15;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="reflectionDepth" class="style1">reflectionDepth</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the depth of the reflection. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.reflectionDepth = 100;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="reflectionDistance" class="style1">reflectionDistance</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the distance of the reflection from the photo. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.reflectionDistance = 50;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="reflectionExtend" class="style1">reflectionExtend</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the forward extension of the reflection. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.reflectionExtend = 100;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="scaleMode" class="style1">scaleMode</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the type of scaling used. Options are &quot;showAll&quot;, &quot;scaleToFit&quot; and &quot;noScale&quot;. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.scaleMode = &quot;showAll&quot;;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="selectedScale" class="style1">selectedScale</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the scale of the selected image.</p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.selectedScale = 150;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="selectedReflectionAlpha" class="style1">selectedReflectionAlpha</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the alpha value of the reflection of the selected photo. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.selectedReflectionAlpha = 15;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="selectedY" class="style1">selectedY</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; the y position of the currently selected image. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.selectedY = -10;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="showName" class="style1">showName</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; specifies whether to show the name (true) or not (false).</p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.showName = true;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="showReflection" class="style1">showReflection</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; specifies whether to show a reflection (true) or not (false). </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.showReflection = true;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="spacing" class="style1">spacing</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; determines the spacing between images. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.spacing = 10;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="zoom" class="style1">zoom</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; determines the amount of zooming to be applied on mouse over. </p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.zoom = 20;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<H1><a name="zoomType" class="style1">zoomType</a></H1>
+<H4>Availability </H4>
+<p>Flash Player 8</p>
+<H4>Description</H4>
+<p>Property; determines which images should zoom on mouse over. Options are 'none', 'all', 'selected' and 'notSelected'.</p>
+<H4>Example</H4>
+<PRE class="style2">myPhotoFlow.zoomType = &quot;all&quot;;</PRE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+</body>
+
+</html>

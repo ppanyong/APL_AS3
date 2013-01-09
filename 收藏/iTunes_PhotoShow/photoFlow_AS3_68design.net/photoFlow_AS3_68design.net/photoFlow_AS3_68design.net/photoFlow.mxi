@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macromedia-extension
+	 name="photoFlow_AS3"
+	 version="1.0.0"
+	 type="flash component">
+
+	<author name="Flashloaded.com" />
+
+	<products>
+		<product name="Flash" version="9" primary="true" />
+	</products>
+
+	<description>
+	<![CDATA[The photoFlow component is used to create a stacked 3D photo navigation system. A skinnable scrollbar is included to scroll through the photos. The photoFlow can be controlled either through ActionScript or the Component Inspector panel. Photos can also be loaded through an external XML file.]]>
+	</description>
+
+	<ui-access>
+	<![CDATA[
+	photoFlow AS3>photoFlow
+	]]>
+	</ui-access>
+
+	<license-agreement>
+	<![CDATA[
+	
+	]]>
+	</license-agreement>
+
+	<files>
+		<file source="photoFlow.swc" destination="$flash/Components/photoFlow AS3" />
+		<file source="photoFlowScrollBar.swc" destination="$flash/Components/photoFlow AS3" />
+	</files>
+
+</macromedia-extension>
+

@@ -1,0 +1,177 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 13px;
+	margin-top: 5px;
+	margin-left: 10px;
+	padding-left: 5px;
+	background-color: #FFFFFF;
+}
+
+a:link {
+	color: #005FA9;
+}
+
+a:visited {
+	color: #005FA9;
+}
+
+a:hover { 
+	background-color: #DDEEFF;
+}
+
+h4 a, .index a {
+	color: #005FA9;
+}
+
+h4 a:visited, .index a:visited {
+	color: #005FA9;
+}
+
+h1 { 
+	font-size: 130%; 
+	margin-top: 0em;
+	margin-bottom: .7em;
+}
+
+h2 {   
+	font-size: 120%;
+	margin-top: 1.4em;
+	margin-bottom: .7em;
+}
+
+h3 {  
+	font-size: 110%;
+	margin-top: 1.2em;
+	margin-bottom: .7em; 
+}
+
+h4 { 
+	font-size: 100%; 
+	font-weight: bold;
+	margin-top: 1.2em;
+	margin-bottom: .6em; 
+}
+
+hr { 
+	color: #000000;
+	height: 1px;
+	margin-top: 0em;
+	margin-bottom: 0em; 	
+}
+
+p.index {
+	text-align: center;
+	margin-bottom: 0em;
+}
+
+ol p, ul p {  
+	margin-top: .7em;
+	margin-bottom: 0;
+}
+
+ol {
+	font-size: 100%; 
+	margin-top: .5em; 
+	margin-bottom: 0em; 
+	margin-left: 4.5em;
+}
+
+ul {
+	font-size: 100%; 
+	margin-top: .5em; 
+	margin-bottom: 0em; 
+}
+
+ol ul, ul ul {
+	list-style: square; 
+	margin-top: .5em;
+}
+
+ol ol {
+	list-style: lower-alpha; 
+	margin-top: .5em;
+}
+
+li {
+	margin-bottom: .7em; 
+	margin-left: -2em;
+}
+
+pre, .code {  
+	font-family: "Courier New", Courier, mono; 
+	font-size: 120%;
+}
+
+.code {
+	white-space: nowrap;
+}	
+
+ol pre, ul pre {  
+	margin-top: .5em;
+	margin-bottom: 0em;
+}
+
+code {  
+	font-family: "Courier New", Courier, mono;
+	font-size: 100%;
+}
+
+img {
+	margin: 0px 5px 0px 0px;
+	border: none;
+}
+
+.nav {  
+	margin-top: -3px;
+	margin-bottom: -3px;
+}
+
+/*.nav img {
+	margin: 0px 0px 0px 0px;
+}*/
+
+.welcomehelp {
+	margin-left: 57px;
+}
+
+.welcomehowdoi {
+	margin-left: 63px;
+}
+
+img.pathnumber {
+	margin-bottom: -7px;
+	margin-left: -42px;
+}
+
+img.usericon {
+	margin-bottom: -11px;
+	margin-left: -48px;
+}
+
+.welcomeexpander {
+	margin-left: -14px;	
+}
+
+div.procedure, div.welcomehelp, div.welcomehowdoi {
+	display:none;
+}
+
+.searchhilite {
+	background-color: #DFDF00;	
+}
+
+* html .listing {
+   width: 96%;
+   padding-left: 1%;
+   padding-right: 5px;
+   padding-top: 2px;
+   padding-bottom: 17px;
+   overflow-x: auto;	
+   background-color: #F2F2F2;
+}
+
+* html .signature {
+	font-size: 120%;
+	font-weight: bold;
+	font-family: "Courier New", Courier, mono;
+}

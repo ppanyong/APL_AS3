@@ -1,0 +1,82 @@
+<artworkinfo>
+	<albuminfo>
+		<artLocation>images/album1.jpg</artLocation>
+		<artist>The Doors</artist>
+		<albumName>Greatest Hits</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+
+	<albuminfo>
+		<artLocation>images/album2.jpg</artLocation>
+		<artist>The White Stripes</artist>
+		<albumName>Elephant</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+	
+	<albuminfo>
+		<artLocation>images/album3.jpg</artLocation>
+		<artist>Kanye Wests</artist>
+		<albumName>Graduation</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink></albumLink>
+	</albuminfo>
+
+	<albuminfo>
+		<artLocation>images/album4.jpg</artLocation>
+		<artist>A Fine Frenzy</artist>
+		<albumName>One Cell In The Sea</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+
+	<albuminfo>
+		<artLocation>images/album5.jpg</artLocation>
+		<artist>Amy Winehouse</artist>
+		<albumName>Back to Black</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+
+	<albuminfo>
+		<artLocation>images/album6.jpg</artLocation>
+		<artist>The Vines</artist>
+		<albumName>Highly Evolved</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+
+	<albuminfo>
+		<artLocation>images/album7.jpg</artLocation>
+		<artist>The Strokes</artist>
+		<albumName>Is This It</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+
+	<albuminfo>
+		<artLocation>images/album8.jpg</artLocation>
+		<artist>Yeah Yeah Yeahs</artist>
+		<albumName>Maps - Single</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+
+	<albuminfo>
+		<artLocation>images/album9.jpg</artLocation>
+		<artist>DangerDoom</artist>
+		<albumName>The Mouse and the Mask</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+
+	<albuminfo>
+		<artLocation>images/album10.jpg</artLocation>
+		<artist>Fort Minor</artist>
+		<albumName>The Rising Tied</albumName>
+		<artistLink>http://www.lanrentuku.com</artistLink>
+		<albumLink>http://www.lanrentuku.com</albumLink>
+	</albuminfo>
+
+</artworkinfo>

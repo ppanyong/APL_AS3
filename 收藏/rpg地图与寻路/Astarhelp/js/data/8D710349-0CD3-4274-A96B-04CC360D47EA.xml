@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("1.1:1", "", "Astar", "EARoot/EA1/EA1/EA3.htm", "3.png", "4", "0", "", "Logical diagram");
+tocTab[tocTab.length] = new Array("1.1:2", "", "ChangeMapEvent", "EARoot/EA1/EA1/EA5.htm", "5.png", "17", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1:3", "", "Foeman", "EARoot/EA1/EA1/EA6.htm", "5.png", "18", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1:4", "", "GameHuman", "EARoot/EA1/EA1/EA7.htm", "5.png", "19", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1:5", "", "MainProgram", "EARoot/EA1/EA1/EA8.htm", "5.png", "20", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1:6", "", "MapData", "EARoot/EA1/EA1/EA9.htm", "5.png", "21", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1:7", "", "Maps", "EARoot/EA1/EA1/EA10.htm", "5.png", "22", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1:8", "", "NotClickEvent", "EARoot/EA1/EA1/EA11.htm", "5.png", "23", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1:9", "", "SearchRoad", "EARoot/EA1/EA1/EA12.htm", "5.png", "24", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1:10", "", "WalkEvent", "EARoot/EA1/EA1/EA13.htm", "5.png", "25", "0", "", "Class");

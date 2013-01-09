@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-7">
+<title>flvPlayerPro Userguide</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link href="../css/help_pc.css" rel="stylesheet" type="text/css" />
+<link href="../css/flvplayerpro.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {color: #009966}
+-->
+</style>
+</head>
+
+<body>
+
+
+<h1 class="title">Customizing the Preloader </h1>
+<p>The <span class="highlight">photoFlow</span> includes a built-in preloader to show the loading progress of each image. The look and functionality of the preloader can be customized to suit your needs.</p>
+<p>1. Open your Flash file that contains your project using the <span class="highlight">photoFlow</span>.<br>
+  <br><img width="576" height="317" src="preloader_clip_image002.jpg"></p>
+<p><br>
+  2. Press <em>Ctr+L</em> (Win) or <em>Cmnd+L</em> (Mac) to open the <span class="highlight">Library panel</span>.<br>
+  <br>
+  <img width="229" height="344" src="skinning_clip_image004.jpg"></p>
+<p><br>
+3. From the menu in Flash, select <span class="highlight">Window &gt; Common  Libraries &gt; photoFlowPreloader</span></p>
+<p><img width="219" height="344" src="preloader_clip_image006.jpg"></p>
+<p><br>
+4. Drag the<span class="highlight"> PhotoFlowPreloader</span> folder from the common library into the library of your current Flash file that you opened at step 2. You may now close the common library as you will only be working with the library in your current Flash file.<br>
+<br>
+    <img width="225" height="291" src="preloader_clip_image008.jpg"></p>
+<br>
+<p>5. Double click on the <span class="highlight">photoflow_preloader</span> movie clip that's in the <span class="highlight">PhotoFlowPreloader folder</span> in your library in order to edit it. This is how the timeline of the preloader will look: <br>
+  <br>
+<img width="361" height="288" src="preloader_clip_image010.jpg"></p>
+<p>6. You can edit the textfield for the preloader as well as the animation. You may also wish to edit the funtionality of the preloader by changing the code. 
+</p>
+<p><br>
+<span class="subtitle">Changing the preloader code </span></p>
+<p>The code for the preloader can be found in frame 1 on the timeline. Two functions are used here: <span class="highlight">onStartLoad</span> and <span class="highlight">onUpdate</span>. In the default preloader MovieClip, the script looks like this:</p>
+<pre class="style1">function onUpdate(percent:Number){
+        percent_txt.text=percent;
+}
+
+
+function onStartLoad(obj:Object,w,h){
+        name_txt.text=obj.name;
+        this._x=w/2;
+        this._y=h/2;
+        this._visible=true;
+}
+
+
+this._visible=false;
+</pre>
+<p>Frame 4 has a goto action:</p>
+<pre class="style1">
+gotoAndPlay(2);</pre>
+<p><br>
+  The <span class="highlight">onUpdate</span> function has the  parameter <span class="highlight">percent</span> which indicates the   current percent loaded. This function will trigger every time the  percentage updates. 
+Each time the <span class="highlight">onUpdate</span> function is triggered it will update the text of preloader.</p>
+<p>The   <span class="highlight">onStartLoad</span> function has 3 parameters: <span class="highlight">obj</span> is the information  object of the image, <span class="highlight">w</span> and <span class="highlight">h</span> are the width and height of image. This function is used to  initialize the preloader.</p>
+<p><br>
+  You can also create your own preloader without modifying the  default preloader. To do this, you just need to give the linkage identifier <span class="highlight">photoflow_preloader</span> to your  preloader MovieClip and remember to check the <span class="highlight">Export at first frame</span> checkbox.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

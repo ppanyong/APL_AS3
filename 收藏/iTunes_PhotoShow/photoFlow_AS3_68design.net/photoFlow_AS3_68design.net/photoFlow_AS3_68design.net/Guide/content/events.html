@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-7">
+<title>photoFlow</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link href="../css/help_pc.css" rel="stylesheet" type="text/css" />
+<link href="../css/flvplayerpro.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {color: #009966}
+-->
+</style>
+</head>
+<body>
+<h1 class="title">Events</h1>
+<p>Events are called whenever the photoFlow performs the specified action. The photoFlow includes the following events:</p>
+<p><strong>onInitPhotoFlow<br>
+</strong>Executed upon initializing the photoFlow</p>
+<p><strong>  onLoadPhotosComplete<br>
+  </strong>Executed once the specified number of images have finished loading <strong><br>
+  <br>
+  onSelectPhoto<br>
+  </strong>Executed when an image becomes the current/selected image <strong><br>
+  <br>
+  onAddPhoto</strong><br>
+  Executed when an image is added <br>
+  <br>
+  <strong>  onRemovePhoto<br>
+  </strong>Executed when an image is removed</p>
+<p><strong>onDoubleClick<br>
+    </strong>Executed when double clicking on an image</p>
+<p><strong>onMouseOver<br>
+</strong>Executed when the mouse is rolled over an image </p>
+<p><strong>onMouseOut<br>
+</strong>Executed when the mouse is rolled off an image </p>
+<p><strong>onAutoFlip<br>
+  </strong>Executed each time an image is auto flipped</p>
+<p><strong>  onLoadPhoto<br>
+</strong>Executed each time an image has loaded </p>
+<p><strong>onLoadSet<br>
+  </strong>Executed once the specified number of images has loaded </p>
+<p><strong>onLoadProgress<br>
+  </strong>Executed whenever the load progress has changed</p>
+<p><strong>  onStartLoadPhoto</strong><br>
+Executed whenever an image starts loading </p>
+<p><br>
+In order to use an event, you need to add a listener, which listens for the event's occurance. The following example shows how the <span class="highlight">onInitPhotoFlow</span> event is called when the <span class="highlight">photoFlow</span> is initialized:<br>
+</p>
+<pre class="style1">var lis={};
+lis.onInitPhotoFlow = function  (evt) {<br> trace ("photoflow  initialized"); // type event action  here.<br>}<br>photoflow.addEventListener ("onInitPhotoFlow", lis);</pre>
+  <p>The lis object now listens to the initialization event of the photoFlow and  performs the specified action.</p>
+  <p>An event object contains information that can  be used. The following event objects have the same data structure:<br>
+  <br>
+    <strong>onSelectPhoto<br>
+    onAddPhoto<br>
+    onRemovePhoto<br>
+    onDoubleClick<br>
+    onAutoFlip</strong><br>
+  <br>
+    Here is a example of using a variable from event object:
+<pre class="style1">var  lis={};
+lis.onSelectPhoto=function(evt){
+    trace("selected photo");
+    trace("name:"+evt.name);
+    trace("photo index:"+evt.index);
+    trace("desc:"+evt.desc);
+    trace("url:" + evt.url);
+}<br>photoflow.addEventListener ("onSelectPhoto", lis);</pre> 
+<br>
+<br>
+The evt object also represents the object that is added to the <span class="highlight">photoFlow</span> component, for  example if you add object with this line of script:
+<br>
+<br>
+<pre class="style1">var  obj={name:"p1",url:"photo1.jpg",link:"home.html"};</pre>
+Then you can retrieve the link attribute from the event object, like this:
+<pre class="style1">
+var  lis={};
+lis.onDoubleClick=function(evt){<br>    getURL(evt.link);// open browser page to home.html<br>}<br>photoflow.addEventListener ("onDoubleClick", lis);</pre>
+<p>In the example above, the link attribute is read from the object (evt).</p>
+<p>The following example shows how to extract the &quot;rate&quot; value from the image (the object):</p>
+<pre class="style1">var obj={name:"p1",url:"photo1.jpg",rate:"5"};
+  photoflow.addPhoto(obj);
+  var lis={};
+  lis.onDoubleClick=function(evt){
+  // retrieve rate attribute of photo.
+  trace("this photo's rate: "+evt.rate);Κ <br>}<br>photoflow.addEventListener(lis);  </pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br clear="all">
+</p>
+</body>
+</html>

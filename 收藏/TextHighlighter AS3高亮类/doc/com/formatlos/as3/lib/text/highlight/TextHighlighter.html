@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print">
+<meta content="TextHighlighter,com.formatlos.as3.lib.text.highlight.TextHighlighter,clear,finalize,highlight,highlightIndex" name="keywords">
+<title>com.formatlos.as3.lib.text.highlight.TextHighlighter</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'TextHighlighter - TextHighlighter API';
+				var baseRef = '../../../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">TextHighlighter API</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../all-classes.html')" href="../../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../../index-list.html')" href="../../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../../index.html?com/formatlos/as3/lib/text/highlight/TextHighlighter.html&amp;com/formatlos/as3/lib/text/highlight/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;TextHighlighter</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class TextHighlighter"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.formatlos.as3.lib.text.highlight</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class TextHighlighter</td>
+</tr>
+</table>
+<p></p>
+  TextHighlighter provides a simple API to highlight specific text parts
+  with a custom style
+  
+  <p></p>
+<br>
+<span class="label">Example</span>
+<br>  The example shows how to use the TextHighlighter
+  <div class="listing">
+  <pre>
+  
+  // highlight container
+  var highlight : Sprite = new Sprite();
+  addChild(highlight);
+  
+  // create textfield
+  var textField : TextField = new TextField();
+  addChild(textField);
+  
+  // apply text style and add text
+  ...
+  
+  // highlight style
+  var style : IHighlightStyle = new SimpleHighlightStyle(0x00ff00, 0.5);
+  
+  // highlighter
+  var textHighlighter : TextHighlighter = new TextHighlighter(textField, highlight, style);
+  textHighlighter.highlight(/far/gi);
+  textHighlighter.highlight("Duden", false);
+  </pre>
+  </div>
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#TextHighlighter()">TextHighlighter</a>(textField_:TextField, highlightTarget_:Sprite, style_:<a href="style/IHighlightStyle.html">IHighlightStyle</a> = null)</div>
+<div class="summaryTableDescription">
+   Creates a new TextHighlighter object
+   
+   </div>
+</td><td class="summaryTableOwnerCol">TextHighlighter</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clear()">clear</a>():void</div>
+<div class="summaryTableDescription">
+   clear highlights in the highlightTarget
+   </div>
+</td><td class="summaryTableOwnerCol">TextHighlighter</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#finalize()">finalize</a>():void</div>
+<div class="summaryTableDescription">
+   finalize the object
+   </div>
+</td><td class="summaryTableOwnerCol">TextHighlighter</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#highlight()">highlight</a>(word_:*, clear_:Boolean = true):void</div>
+<div class="summaryTableDescription">
+   highlights the specified word in the textfield
+   
+   </div>
+</td><td class="summaryTableOwnerCol">TextHighlighter</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#highlightIndex()">highlightIndex</a>(beginIndex_:int = -1, endIndex_:int = -1):void</div>
+<div class="summaryTableDescription">
+    puts a highlight at the specified index
+    
+    </div>
+</td><td class="summaryTableOwnerCol">TextHighlighter</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="TextHighlighter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">TextHighlighter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function TextHighlighter(textField_:TextField, highlightTarget_:Sprite, style_:<a href="style/IHighlightStyle.html">IHighlightStyle</a> = null)</code><p>
+   Creates a new TextHighlighter object
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">textField_</span>:TextField</code> &mdash;   the textfield with the text to highlight
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">highlightTarget_</span>:Sprite</code> &mdash;  target for the highlight
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">style_</span>:<a href="style/IHighlightStyle.html">IHighlightStyle</a></code> (default = <code>null</code>)<code></code> &mdash;    Style for the highlight
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clear():void</code><p>
+   clear highlights in the highlightTarget
+   </p></div>
+<a name="finalize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">finalize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function finalize():void</code><p>
+   finalize the object
+   </p></div>
+<a name="highlight()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">highlight</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function highlight(word_:*, clear_:Boolean = true):void</code><p>
+   highlights the specified word in the textfield
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">word_</span>:*</code> &mdash; String or RegExp
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">clear_</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; clear old highlights or not
+   </td>
+</tr>
+</table>
+</div>
+<a name="highlightIndex()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">highlightIndex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function highlightIndex(beginIndex_:int = -1, endIndex_:int = -1):void</code><p>
+    puts a highlight at the specified index
+    
+    </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">beginIndex_</span>:int</code> (default = <code>-1</code>)<code></code> &mdash;  start at this index
+    </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">endIndex_</span>:int</code> (default = <code>-1</code>)<code></code> &mdash; highlight until this index
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-7">
+<title>photoFlow</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/flvplayerpro.css" rel="stylesheet" type="text/css">
+<link href="../css/help_pc.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<h1 class="title">Parameters</h1>
+
+<p>&nbsp;</p>
+<table width="95%" border="1" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#999999">
+  <tr bgcolor="#DEDEDE">
+    <th width="22%"> <p><b><font color="#000000">Property</font></b></p></th>
+    <th width="48%"> <p><font color="#000000"><b>Description </b></font></p></th>
+    <th width="30%"> <p><font color="#000000"><b>Example</b></font></p></th>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>Photos</td>
+    <td>The information of each of the images: name, description, link, linkage id, url.<br>
+      This parameter is only required if you are not loading the images through an XML file or ActionScript. </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>mouseWheelFlip</td>
+    <td>Specifies whether to allow users to flip through the images using the mouse scrollwheel. </td>
+    <td>true</td>
+  </tr>
+   <tr bgcolor="#FFFFFF">
+    <td>autoflip seconds </td>
+    <td>Defines the number of seconds to wait before automatically flipping to the next image. Set to &quot;0&quot; if you do not want to use the auto flip option. </td>
+    <td>0</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>flipSound </td>
+    <td>The path to the sound file to play when flipping between images. You can also enter the linkage identifier for sounds that are in the library. </td>
+    <td>flip.wav</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>flipSpeed</td>
+    <td>The speed at which to flip.</td>
+    <td>10</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>nameBold</td>
+    <td>Determines whether to format the name text field as bold or not.</td>
+    <td>false</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>nameColor</td>
+    <td>The color for the image name text.</td>
+    <td>#FF0000</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>nameDistance</td>
+    <td>The distance (in pixels) that the image name should be displayed from either the top or the bottom of the current image. </td>
+    <td>10</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>namePosition</td>
+    <td><p>The position of the image name. Options are: <em>top left, top center, top right, bottom left, bottom center, bottom right </em></p>    </td>
+    <td>bottom center </td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>nameSize</td>
+    <td>The font size for the image name. </td>
+    <td>20</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>nameFont</td>
+    <td>The name of the font to use for the image name text. </td>
+    <td>Arial</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>embedFont</td>
+    <td>Set this to true when using an embedded font to display the image name text. Embedded fonts should always be used if there is a chance the viewers do not have the same font installed. </td>
+    <td>false</td>
+  </tr>
+  
+  <tr bgcolor="#FFFFFF">
+    <td>folderPath</td>
+    <td>The path to the folder containing the external images. Note: The path should be relative to the location of the HTML file in which the SWF is embedded. The path name must always end with a forward slash: /</td>
+    <td>images/</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>preloadSet</td>
+    <td>The number of images to preload before displaying any of the images.</td>
+    <td>0</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>xmlPath</td>
+    <td>The path and name of the XML file to load. The XML file contains the list of images to load. </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>hpers</td>
+    <td>Horizontal perspective. Range: 0.1~0.9</td>
+    <td>0.2</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>vpers</td>
+    <td>Vertical perspective. Range: 0.1~0.9</td>
+    <td>0.2</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>view</td>
+    <td>Angle at which to view the photoFlow. The range is: 0~100 </td>
+    <td>50</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>reflectionAlpha</td>
+    <td>Reflection opacity.</td>
+    <td>15</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>reflectionDepth</td>
+    <td><p>Depth of reflection. Range: 1~255</p></td>
+    <td>100</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>reflectionDistance</td>
+    <td>Distance between reflection  and each image.<br></td>
+    <td>0</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>refelectionExtend</td>
+    <td>The number of pixels that each reflection should extend. <br></td>
+    <td>200</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>selectedReflectionAlpha</td>
+    <td>Opacity of the selected image. </td>
+    <td>60</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>showName</td>
+    <td>Specifies whether to display the name of each image or not. </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>showRelection</td>
+    <td>Specifies whether to show the reflections or not.</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>photoHeight</td>
+    <td>The height of the images. </td>
+    <td>200</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>photoWidth</td>
+    <td>The width of the images. </td>
+    <td>200</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>selectedY</td>
+    <td>The relative Y position of the selected/current image.</td>
+    <td>-10</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>holderAlpha</td>
+    <td>The opacity of the image holder. </td>
+    <td>100</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>defaultId</td>
+    <td>The number of the first image to display on loading. The first image starts counting from 0. Enter -1 to display the last image (causing the photoFlow to start flipping from left to right). </td>
+    <td>3</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>holderAlpha</td>
+    <td>Specifies the transparency of the holder clip. 0 is transparent, 100 is opaque.</td>
+    <td>0</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>holderBorderAlpha</td>
+    <td>Specifies the transparency of the holder clip's border. 0 is transparent, 100 is opaque.</td>
+    <td>0</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>holderBorderColor</td>
+    <td>The color of the border that appears around each image while it is loading. </td>
+    <td>#E4E4E4</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>holderColor</td>
+    <td>The background color of the image holder. </td>
+    <td>#F8F8F8</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>scaleMode</td>
+    <td><p>Determines how the images should be resized to fit  the specified width and height:<br>
+        <em>showAll</em> = The images are scaled proportionally to fit the maximum width or maximum height possible.<br>
+        <em>scale to fit</em> = The images are stretched to fill the defined height and width<br>
+        <em>no scale</em> = The images are displayed at their original size.
+      <br>
+    </p>      </td>
+    <td>showAll, scale to fit, no scale </td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>selectedScale</td>
+    <td>Specifies the scale of the selected image.</td>
+    <td>100</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>spacing</td>
+    <td>The spacing between each image when stacked. </td>
+    <td>50</td>
+  </tr>
+  <tr bgcolor="#F8F8F8">
+    <td>zoom</td>
+    <td>Specifies the amount each image should be scaled on mouse over.</td>
+    <td>20</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td>zoomType</td>
+    <td>Specifies which images should scale (by the amount specified by the zoom parameter) on mouse over.</td>
+    <td>none, all, selected, notSelected</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

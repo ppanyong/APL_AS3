@@ -1,0 +1,10 @@
+﻿<config>
+<lib>
+<item>lib.swf</item>
+<item id='nav'>main_nav.swf</item>
+</lib>
+<module>
+<item>login.swf</item>
+<item>result.swf</item>
+</module>
+</config>

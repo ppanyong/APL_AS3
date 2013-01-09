@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<photos path="images/">
+
+<photo id="photo1" url="img1.jpg" author="test">this is photo1.</photo>	
+<photo id="photo2" url="cover2.jpg" author="test">this is photo2.</photo>	
+<photo id="photo3" url="cover3.jpg" author="test">this is photo3.</photo>	
+<photo id="photo5" url="cover5.jpg" author="test">this is photo5.</photo>
+<photo id="photo4" url="img2.jpg" author="test">this is photo4.</photo>		
+
+</photos>
