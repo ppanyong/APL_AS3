@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/key
+END
+LinearCurveKey3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/key/LinearCurveKey3D.as
+END
+StepCurveKey3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/key/StepCurveKey3D.as
+END
+CurveKey3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/key/CurveKey3D.as
+END
+BezierCurveKey3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/key/BezierCurveKey3D.as
+END

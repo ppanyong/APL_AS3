@@ -1,0 +1,95 @@
+10
+
+dir
+942
+http://papervision3d.googlecode.com/svn/trunk/as3/trunk/src/org/papervision3d
+http://papervision3d.googlecode.com/svn
+
+
+
+2010-04-24T22:38:41.044986Z
+942
+sebstar55
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+071aa1e1-232a-0410-a790-59abb25ab4c3
+
+render
+dir
+
+scenes
+dir
+
+utils
+dir
+
+materials
+dir
+
+events
+dir
+
+typography
+dir
+
+core
+dir
+
+Papervision3D.as
+file
+
+
+
+
+2011-12-29T14:11:37.109375Z
+3a5b8014b452c472598b045d4db5c8fa
+2009-03-12T14:13:37.259890Z
+894
+neoriley
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1710
+
+objects
+dir
+
+view
+dir
+
+lights
+dir
+
+cameras
+dir
+

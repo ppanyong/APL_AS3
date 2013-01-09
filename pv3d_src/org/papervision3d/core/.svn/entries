@@ -1,0 +1,79 @@
+10
+
+dir
+942
+http://papervision3d.googlecode.com/svn/trunk/as3/trunk/src/org/papervision3d/core
+http://papervision3d.googlecode.com/svn
+
+
+
+2010-04-24T20:58:59.653171Z
+941
+sebstar55
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+071aa1e1-232a-0410-a790-59abb25ab4c3
+
+render
+dir
+
+effects
+dir
+
+animation
+dir
+
+ns
+dir
+
+log
+dir
+
+controller
+dir
+
+geom
+dir
+
+math
+dir
+
+dyn
+dir
+
+culling
+dir
+
+material
+dir
+
+utils
+dir
+
+proto
+dir
+
+clipping
+dir
+
+io
+dir
+
+data
+dir
+
+view
+dir
+

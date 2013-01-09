@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/geometry
+END
+VertexChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/geometry/VertexChannel3D.as
+END
+VerticesChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/geometry/VerticesChannel3D.as
+END
+GeometryChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/geometry/GeometryChannel3D.as
+END

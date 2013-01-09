@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/938/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/transform
+END
+TranslationChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/transform/TranslationChannel3D.as
+END
+RotationChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/transform/RotationChannel3D.as
+END
+TransformStackChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/938/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/transform/TransformStackChannel3D.as
+END
+MatrixChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/transform/MatrixChannel3D.as
+END
+ScaleChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/transform/ScaleChannel3D.as
+END
+TransformChannel3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/animation/channel/transform/TransformChannel3D.as
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/geom
+END
+Lines3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/754/trunk/as3/trunk/src/org/papervision3d/core/geom/Lines3D.as
+END
+Pixels.as
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/789/trunk/as3/trunk/src/org/papervision3d/core/geom/Pixels.as
+END
+Particles.as
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/871/trunk/as3/trunk/src/org/papervision3d/core/geom/Particles.as
+END
+TriangleMesh3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/911/trunk/as3/trunk/src/org/papervision3d/core/geom/TriangleMesh3D.as
+END
+Vertices3D.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/897/trunk/as3/trunk/src/org/papervision3d/core/geom/Vertices3D.as
+END
